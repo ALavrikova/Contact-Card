@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Contact Card</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="contactCard.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+
+  	$("form").submit(function() {
+  		var firstname = $("#firstname").val();
+  		var lastname = $("#lastname").val();
+  		$("#card").html("<h1>" + firstname + "&nbsp&nbsp&nbsp" + lastname +"</h1>" + "<br>" + "<a href='#' id='anchor'>Click for details</a>");
+  		return false;
+  	});
+
+  	 });
+
+  	$(document).on ("click", "#anchor", function() {
+  		var desc = $("#description").val();
+  		$("#card").css("display", "none");
+  		$("#descriptionCard").html("<h2>Description</h2>" + "<br>" + "<h3>" + desc + "</h3>").css("display", "inline-block");
+  	});
+
+
+  </script>
+
+</head>
+
+<body>
+	<div id="container">
+	<form action="/action_page.php">
+	    <p>First name:</p>
+	    <input type="text" name="firstname" id="firstname">
+	    <br>
+	    <p>Last name:</p>
+	    <input type="text" name="lastname" id="lastname">
+	    <br>
+<!-- 	    <p>Email Address:</p>
+	    <input type="text" name="email" id="email">
+	    <br>  --> 
+	    <p>Description:</p>
+	    <input type="text" name="description" id="description">
+	    <br><br>
+	    <input type="submit" value="Add user" id="button">
+  	</form> 
+  	</div>
+  	<div id="card">
+
+  	</div>	
+  	<div id="descriptionCard">
+
+  	</div>
+
+</body>
+
+</html>	

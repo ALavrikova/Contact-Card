@@ -1,0 +1,104 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	display: inline-block;
+	vertical-align: top;
+	width: 500px;
+}
+
+#firstname {
+	width: 300px;
+	height: 50px;
+	font-family: century gothic;
+	margin: 10px 20px;
+}
+
+#lastname {
+	width: 300px;
+	height: 50px;
+	font-family: century gothic;
+	margin: 20px 20px;
+}
+
+#email {
+	width: 300px;
+	height: 50px;
+	font-family: century gothic;
+	margin: 10px 20px;
+}
+
+#description {
+	width: 300px;
+	height: 100px;
+	font-family: century gothic;
+	margin: 10px 20px;
+}
+
+p {
+	font-family: century gothic;
+	margin: 10px 20px;
+}
+
+#button {
+	width: 200px;
+	height: 45px;
+	border-radius: 20px;
+	background-color: #98D74C;
+	font-family: century gothic;
+	margin: 0px 20px;
+	font-size: 20px;
+	color: white;
+}
+
+#card {
+	border: 3px solid green;
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 25px 15px;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 35px;
+	font-family: century gothic;
+	word-wrap: break-word;
+	color: #32500E;
+}
+
+a {
+	font-size: 20px;
+	font-family: century gothic;
+	text-decoration: none;
+	color: #760A5E;
+}
+
+#descriptionCard {
+	border: 3px solid #98D74C;
+	width: 400px;
+	height: 300px;
+	vertical-align: top;
+	display: none;
+	text-align: center;
+	padding: 25px 15px;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 30px;
+	font-family: century gothic;
+	word-wrap: break-word;
+	color: #32500E;
+}
+
+h3 {
+	word-wrap: break-word;
+	font-family: century gothic;
+	font-size: 14px;
+	font-weight: 400;
+}
